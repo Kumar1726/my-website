@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBlog</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background: #f1f1f1;
+        }
+        .header{
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: #ddd;
+        }
+        .left-column{
+            float: left;
+            width: 75%;
+        }
+        .right-column{
+            float: left;
+            width: 25%;
+            padding: 20px;
+        }
+        .fakeimg{
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+        .cards {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            transition: transform 0.3s ease-in-out; /* smooth zoom */
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+        .cards:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* optional effect */
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to my BLOG</h1>
+    </div>
+    <div class="row">
+        <div class="left-column">
+            <div class="cards">
+                <h2>TITLE HEADING</h2>
+                <h5>TITLE description, Dec 7, 2025</h5>
+                <div class="fakeimg" style="height: 200px;">Image</div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione dolores exercitationem corporis ex quo, itaque, illo laboriosam beatae culpa doloribus maxime impedit vitae perspiciatis possimus accusamus nobis. Facere, optio laborum.</p>
+            </div>
+            <div class="cards">
+                <h2>TITLE HEADING</h2>
+                <h5>TITLE description, Dec 7, 2025</h5>
+                <div class="fakeimg" style="height: 200px;">Image</div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione dolores exercitationem corporis ex quo, itaque, illo laboriosam beatae culpa doloribus maxime impedit vitae perspiciatis possimus accusamus nobis. Facere, optio laborum.</p>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="cards">
+                <h2>About Me</h2>
+                <div class="fakeimg" style="height: 100px;">Image</div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="cards">
+                <h3>Popular Images</h3>
+                <div class="fakeimg">Image</div><br>
+                <div class="fakeimg">Image</div><br>
+                <div class="fakeimg">Image</div>
+            </div>
+            <div class="cards">
+                <h3>Follow Me</h3>
+                <p>Some text..</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+</html>
